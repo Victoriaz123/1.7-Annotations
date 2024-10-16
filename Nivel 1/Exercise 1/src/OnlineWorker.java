@@ -1,6 +1,6 @@
 public class OnlineWorker extends Worker{
 
-private static final double internetRate = 20.0;
+private static final double INTERNET_RATE = 20.0;
 
 
     public OnlineWorker(String name, String lastname, double pricePerHour) {
@@ -10,7 +10,7 @@ private static final double internetRate = 20.0;
 
     @Override
     public double calculateSalary(double hours) {
-        return super.calculateSalary(hours) + internetRate;
+        return super.calculateSalary(hours) + INTERNET_RATE;
     }
 
 }
